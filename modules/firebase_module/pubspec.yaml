@@ -1,0 +1,43 @@
+name: firebase_module
+description: Firebase connector module.
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 0.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter 
+
+  # Firebase
+  firebase_core: ^2.15.1
+  firebase_messaging: ^14.6.6
+  firebase_crashlytics: ^3.3.5
+  firebase_analytics: ^10.4.5
+  firebase_auth: ^4.7.3
+
+  dartz: ^0.10.1
+  
+  riverpod: ^2.3.6
+
+  # Shared
+  core_module:
+    path: ../core_module   
+    
+dev_dependencies: 
+  flutter_lints: ^2.0.1
+  build_runner: ^2.4.4
+
+flutter_test:
+    sdk: flutter 

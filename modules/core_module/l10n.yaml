@@ -1,0 +1,10 @@
+arb-dir: lib/src/l10n
+template-arb-file: intl_en.arb
+
+output-localization-file: intl_l10n.dart
+output-class: AppLocalization
+output-dir: lib/src/l10n/generated
+
+synthetic-package: false
+
+use-deferred-loading: true

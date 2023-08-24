@@ -1,0 +1,44 @@
+name: core_module
+description: Core functionality used by features and use cases
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 0.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies: 
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  intl: ^0.18.0
+
+  dartz: ^0.10.1
+
+  equatable: ^2.0.5
+
+  freezed: ^2.3.4
+
+  # Riverpod (State Management)
+  flutter_riverpod: ^2.3.7
+
+dev_dependencies:
+  flutter_lints: ^2.0.1
+  build_runner: ^2.4.4
+
+flutter_test:
+    sdk: flutter 
+ 
+flutter_intl:
+  enabled: true
+  arb_dir: lib/src/l10n
+
+# The following section is specific to Flutter.
+flutter:
+
+  # Enable generation of localized Strings from arb files.
+  generate: true
